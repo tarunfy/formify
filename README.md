@@ -6,7 +6,7 @@ so you don't need to worry about any backend code,
 formify will handle everything for you.
 
 ## Features
-Formify comes with the power of email notifications, discord webhooks url and return url support, it let's you handle your different forms used over different sites and handle each of thier submissions with a clean UI.
+It comes with the power of Email notifications, Discord webhooks URL and Return URL support, it let's you handle your different forms used over different sites and handle each of their submissions with a clean UI .
 
 ## How to use 
 You just need to signup/register and start creating forms, 
