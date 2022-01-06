@@ -53,7 +53,9 @@ const Dashboard = ({ isDark, ...props }) => {
         data-aos="fade"
       >
         <div className="flex justify-between items-center w-5/6 mb-4">
-          <h1 className="text-5xl font-extrabold font-sans">My forms</h1>
+          <h1 className="xl:text-5xl text-3xl font-extrabold font-sans">
+            My forms
+          </h1>
           <button
             className="font-mono border border-mygreen font-bold py-2 px-4 rounded-sm transform transition-transform hover:scale-95 hover:opacity-95 duration-200 ease-in"
             onClick={() => setModalIsOpen(true)}
@@ -62,7 +64,10 @@ const Dashboard = ({ isDark, ...props }) => {
           </button>
         </div>
         {forms.length > 0 ? (
-          <div className="h-5/6 w-5/6 mb-5 p-4 rounded-md grid grid-cols-4 gap-6  overflow-x-hidden overflow-y-scroll">
+          <div
+            id="grid"
+            className="h-5/6 w-5/6 mb-5 p-4 rounded-md grid tablet:grid-cols-2 xl:grid-cols-4 xl:gap-6 grid-cols-1 gap-5  overflow-x-hidden overflow-y-scroll"
+          >
             {forms.map((form) => (
               <Card
                 key={form._id}

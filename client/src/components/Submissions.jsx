@@ -31,12 +31,15 @@ const Submissions = ({ formId }) => {
   return submissions.length < 1 ? (
     <div data-aos="fade" className="flex justify-center flex-col items-center">
       <img src={emptyState} alt="no submissions" className="h-80 w-96" />
-      <h1 className="dark:text-white text-4xl font-Nunito font-bold ">
+      <h1 className="dark:text-white text-center xl:text-4xl text-3xl font-Nunito font-bold ">
         Ooops! You have no submissions.
       </h1>
     </div>
   ) : (
-    <div className="grid grid-cols-3 bigScreen:gap-4 gap-6 p-4 max-h-11/12 overflow-x-hidden overflow-y-scroll">
+    <div
+      id="grid2"
+      className="grid w-full xl:grid-cols-3 grid-cols-1 tablet:grid-cols-2 bigScreen:gap-4 gap-6  p-4 max-h-11/12 overflow-x-hidden overflow-y-scroll"
+    >
       {submissions.map((submission, index) => (
         <SubmissionCard key={index} submission={submission} />
       ))}

@@ -43,6 +43,11 @@ module.exports = {
       },
       screens: {
         bigScreen: "1600px",
+        tablet: "900px",
+        smallTable: "500px",
+      },
+      translate: {
+        3.5: "0.80rem",
       },
     },
   },

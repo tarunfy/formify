@@ -38,16 +38,16 @@ const SignIn = ({ isDark }) => {
   };
 
   return (
-    <div className="flex transition-colors duration-200 ease-linear dark:bg-black flex-row-reverse justify-evenly items-center h-screen">
+    <div className="flex transition-colors duration-200 ease-linear dark:bg-black flex-row-reverse xl:justify-evenly items-center justify-center h-screen overflow-hidden">
       <div
         data-aos="fade-right"
-        className="h-customHeight w-customWidth self-center bigScreen:self-center"
+        className="h-customHeight w-customWidth self-center bigScreen:self-center xl:block hidden"
       >
-        <img src={isDark ? darkImg : lightImg} alt="svg" className="mt-8" />
+        <img src={isDark ? darkImg : lightImg} alt="svg" className="xl:mt-8" />
       </div>
       <div
         data-aos="fade-left"
-        className="bg-white dark:bg-myblack z-50 lg:w-96 w-80 pt-10 pb-8 px-10 shadow-customDark2 rounded-lg"
+        className="bg-white dark:bg-myblack  lg:w-96 w-80 pt-10 pb-8 px-10 shadow-customDark2 rounded-lg"
       >
         <form
           className="mb-0 space-y-6"

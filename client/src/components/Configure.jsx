@@ -84,8 +84,11 @@ const Configure = ({ formId, isDark, history }) => {
         </h3>
       </div>
       <div className="flex items-center mb-4">
-        <div className="p-4 dark:bg-myblack2 bg-green-50 w-3/5 rounded-md">
-          <p className="font-Nunito font-semibold text-mygreen2 italic  text-lg">
+        <div className="p-4 dark:bg-myblack2 bg-green-50 xl:w-3/5 w-full rounded-md">
+          <p
+            id="endpoint"
+            className="font-Nunito font-semibold text-mygreen2 italic xl:w-full   xl:text-lg text-sm"
+          >
             {endPoint}
           </p>
         </div>
@@ -101,7 +104,7 @@ const Configure = ({ formId, isDark, history }) => {
         <h3 className="ml-4 text-2xl font-bold  font-sans">Settings</h3>
       </div>
 
-      <div className="flex pl-4 items-center justify-between w-3/5 mb-5">
+      <div className="flex pl-4 items-center justify-between xl:w-3/5 w-full xl:mb-5 mb-3">
         <h4 className="text-xl font-semibold font-Nunito">Form Name</h4>
         <input
           type="text"
@@ -111,7 +114,7 @@ const Configure = ({ formId, isDark, history }) => {
           className="border w-2/4 border-gray-300 dark:border-gray-500 dark:bg-myblack dark:text-white px-3 py-2 rounded-lg shadow-sm focus:outline-none"
         />
       </div>
-      <div className="flex pl-4 items-center justify-between w-3/5 mb-5">
+      <div className="flex pl-4 items-center justify-between xl:w-3/5 w-full xl:mb-5 mb-3">
         <h4 className="text-xl font-semibold font-Nunito">Webhook Url</h4>
         <input
           type="text"
@@ -120,7 +123,7 @@ const Configure = ({ formId, isDark, history }) => {
           className="border w-2/4 border-gray-300 dark:border-gray-500 dark:bg-myblack dark:text-white px-3 py-2 rounded-lg shadow-sm focus:outline-none"
         />
       </div>
-      <div className="flex pl-4 items-center justify-between w-3/5">
+      <div className="flex pl-4 items-center justify-between xl:w-3/5 w-full">
         <h4 className="text-xl font-semibold font-Nunito">Return Url</h4>
         <input
           type="text"
@@ -130,7 +133,7 @@ const Configure = ({ formId, isDark, history }) => {
         />
       </div>
 
-      <div className="flex  w-full items-center justify-end p-4">
+      <div className="flex  w-full items-center justify-end xl:p-4 py-4">
         <button
           onClick={handleUpdate}
           className={`rounded-3xl font-bold text-white font-Nunito  dark:text-black text-xl bg-mygreen3 px-6 py-2 transform transition-transform hover:scale-95 ${

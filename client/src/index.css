@@ -82,3 +82,43 @@ html {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+
+@media only screen and (min-width: 390px) {
+  #endpoint {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    max-width: 80%;
+  }
+}
+
+#cardName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  max-width: 80%;
+}
+
+#subCard {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 900px) {
+  #grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #heroSubtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #grid2 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  #grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

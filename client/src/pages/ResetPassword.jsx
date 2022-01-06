@@ -41,16 +41,16 @@ const ResetPassword = ({ isDark, ...props }) => {
 
   return (
     <>
-      <div className="flex transition-colors duration-200 ease-linear  dark:bg-black justify-evenly items-center h-screen">
+      <div className="flex transition-colors duration-200 ease-linear  dark:bg-black xl:justify-evenly items-center justify-center h-screen">
         <img
           data-aos="fade"
           src={isDark ? imgDark : imgLight}
           alt="img"
-          className="h-customHeight w-customWidth"
+          className="h-customHeight w-customWidth xl:block hidden"
         />
         <div
           data-aos="flip-left"
-          className="bg-white dark:bg-myblack z-50 lg:w-96 w-80 pt-10 pb-8 px-10 shadow-customDark2 rounded-lg"
+          className="bg-white dark:bg-myblack lg:w-96 w-80 pt-10 pb-8 px-10 shadow-customDark2 rounded-lg"
         >
           <form
             className="mb-0 space-y-6"

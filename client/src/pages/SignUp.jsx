@@ -70,12 +70,12 @@ const SignUp = ({ isDark }) => {
   };
 
   return (
-    <div className="flex transition-colors duration-200 ease-linear dark:bg-black flex-row-reverse justify-evenly items-center h-screen">
+    <div className="flex transition-colors duration-200 ease-linear dark:bg-black flex-row-reverse xl:justify-evenly items-center justify-center h-screen">
       <div
         data-aos="fade-left"
-        className="h-customHeight self-center bigScreen:self-center w-customWidth"
+        className="h-customHeight self-center bigScreen:self-center w-customWidth xl:block hidden"
       >
-        <img src={isDark ? darkImg : lightImg} alt="svg" className="mt-8" />
+        <img src={isDark ? darkImg : lightImg} alt="svg" className="xl:mt-8" />
       </div>
       <div
         data-aos="fade-right"

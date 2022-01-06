@@ -7,7 +7,10 @@ const SubmissionCard = ({ submission }) => {
   delete submission.submittedAt;
 
   return (
-    <div className="h-72 w-96 shadow-customDark2 px-4 dark:bg-myblack2 rounded-md flex flex-col justify-evenly hover:scale-105 cursor-pointer transform transition-transform duration-300 ease-in-out">
+    <div
+      id="subCard"
+      className="h-72 xl:w-96 w-full  shadow-customDark2 px-4 dark:bg-myblack2 rounded-md flex flex-col justify-evenly hover:scale-105 cursor-pointer transform transition-transform duration-300 ease-in-out"
+    >
       {Object.keys(submission).map((key, index) => {
         return (
           <div
@@ -15,7 +18,7 @@ const SubmissionCard = ({ submission }) => {
             className="dark:text-white flex justify-between items-center font-Nunito"
           >
             <p className="font-bold">{key}:</p>
-            <p className="text-right">{submission[key]}</p>
+            <p className="text-right w-2/4">{submission[key]}</p>
           </div>
         );
       })}
