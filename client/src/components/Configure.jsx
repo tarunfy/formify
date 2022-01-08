@@ -133,7 +133,10 @@ const Configure = ({ formId, isDark, history }) => {
         />
       </div>
 
-      <div className="flex  w-full items-center justify-end xl:p-4 py-4">
+      <div
+        id="button-container"
+        className="flex  w-full items-center justify-start xl:p-4 py-4"
+      >
         <button
           onClick={handleUpdate}
           className={`rounded-3xl font-bold text-white font-Nunito  dark:text-black text-xl bg-mygreen3 px-6 py-2 transform transition-transform hover:scale-95 ${

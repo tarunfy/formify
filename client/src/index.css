@@ -83,12 +83,17 @@ html {
   padding-right: 0.75rem;
 }
 
-@media only screen and (min-width: 390px) {
+@media only screen and (min-width: 350px) {
   #endpoint {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre-wrap;
     max-width: 80%;
+  }
+}
+@media only screen and (min-width: 580px) {
+  #button-container {
+    justify-content: end;
   }
 }
 

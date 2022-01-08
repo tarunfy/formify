@@ -45,6 +45,7 @@ module.exports = {
         bigScreen: "1600px",
         tablet: "900px",
         smallTable: "500px",
+        moblie: "350px",
       },
       translate: {
         3.5: "0.80rem",
